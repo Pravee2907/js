@@ -1,0 +1,79 @@
+<style>
+        /* Styling for the container of the audio player */
+        .audio-player-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: 200px;
+            background-color: #4CAF50;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        /* Hide the default controls */
+        audio {
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        /* Circular play button */
+        .play-btn {
+            width: 60px;
+            height: 60px;
+            background-color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            position: absolute;
+        }
+
+        /* Play icon */
+        .play-btn:before {
+            content: '';
+            width: 0;
+            height: 0;
+            border-left: 15px solid white;
+            border-top: 7px solid transparent;
+            border-bottom: 7px solid transparent;
+        }
+
+        /* Pause icon */
+        .pause-btn:before {
+            content: '';
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            border-radius: 4px;
+        }
+
+        /* Volume control */
+        .volume-control {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 8px;
+            background-color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Volume indicator */
+        .volume-indicator {
+            width: 50%;
+            height: 100%;
+            background-color: #4CAF50;
+            border-radius: 5px;
+        }
+
+    </style>
