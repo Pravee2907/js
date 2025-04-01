@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Round Audio Player</title>
+    <link href="volume.css">
+    <link href="volume.js">
+</head>
+<body>
+
+<div class="audio-player-container">
+    <audio id="audioPlayer" preload="auto">
+        <source src="your-audio-file.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Play/Pause button -->
+    <div id="playPauseBtn" class="play-btn"></div>
+
+    <!-- Volume control -->
+    <div class="volume-control" id="volumeControl">
+        <div class="volume-indicator" id="volumeIndicator"></div>
+    </div>
+</div>
+
+</body>
+</html>
